@@ -217,7 +217,7 @@ class CactiDSStats extends Base
         // fill all that other information (ifSpeed, etc)
         // (but only if it's not switched off!)
         if (($map->getHint("dsstats_no_cacti_extras") === null) && $localDataId > 0) {
-            updateCactiData($mapItem, $localDataId);
+            Utility::updateCactiData($mapItem, $localDataId);
         }
 
         return $this->returnData();
